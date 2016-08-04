@@ -1,6 +1,7 @@
 # Artwork Manager
 This is an application that provides a User Interface to view art work based on certain parameters in the data.
-[VIEW DEMO HERE](http://serene-earth-77295.herokuapp.com/)
+__[VIEW DEMO](http://serene-earth-77295.herokuapp.com/)__
+
 This is built using the following stack:
 * React
 * Redux: To maintain the state  
