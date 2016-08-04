@@ -49,7 +49,7 @@ export const getVisibleMovies = createSelector(
 
             var firstValue = a.get(fieldToSort);
             var secondValue = b.get(fieldToSort);
-            return sortOrder == SORT_STACKS_ASC ? firstValue.localeCompare(secondValue) : secondValue.localeCompare(firstValue);
+            return sortOrder == SORT_STACKS_ASC ? (firstValue ? firstValue.localeCompare(secondValue) : firstValue > secondValue) : secondValue.localeCompare(firstValue);
         });
     }
 );
