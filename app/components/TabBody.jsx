@@ -6,7 +6,7 @@ const TabBody = ({currentStack}) => {
     return (
         <div>
             {
-                currentStack ?  <VisibleThumbnailGrid /> : <VisibleThumbnailStackGrid />
+                currentStack ? <VisibleThumbnailGrid /> : <VisibleThumbnailStackGrid />
             }
         </div>
     );

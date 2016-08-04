@@ -7,7 +7,7 @@ const Tabs = ({ setVisibleTab, tabs, activeTab }) => {
             <ul className="nav nav-tabs">
                 {tabs.map(tab =>
                         <li className={tab.id == activeTab ? "active" : ""} key={tab.id}>
-                            <a href="#" onClick={() => setVisibleTab(tab.id)} >{tab.title}
+                            <a href="#" onClick={() => setVisibleTab(tab.id)}>{tab.title}
                             </a>
                         </li>
                 )}

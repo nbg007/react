@@ -9,7 +9,9 @@ const ThumbnailStackGrid = ({expandStack, stacks, activeGroup}) => {
             let groupId = stack[0][activeGroup.id];
             let key = "thumbnailstack-" + groupId;
             let coverName = activeGroup.id === "languageCode" ? groupId : "";
-            return ThumbnailStack(key, stack, coverName, () => {expandStack(groupId)});
+            return ThumbnailStack(key, stack, coverName, () => {
+                expandStack(groupId)
+            });
         });
     };
 

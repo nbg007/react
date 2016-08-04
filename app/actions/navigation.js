@@ -6,37 +6,37 @@ export const COLLAPSE_STACK = 'COLLAPSE_STACK';
 
 export const navigationActions = {
     setGroupBy(groupId) {
-    return {
-        type: CHANGE_GROUP_BY,
-        id: groupId
-    }
-},
+        return {
+            type: CHANGE_GROUP_BY,
+            id: groupId
+        }
+    },
 
-expandStack(stackId) {
-    return {
-        type: EXPAND_STACK,
-        id: stackId
-    }
-},
+    expandStack(stackId) {
+        return {
+            type: EXPAND_STACK,
+            id: stackId
+        }
+    },
 
-collapseStack(stackId) {
-    return {
-        type: COLLAPSE_STACK,
-        id: stackId
-    }
-},
+    collapseStack(stackId) {
+        return {
+            type: COLLAPSE_STACK,
+            id: stackId
+        }
+    },
 
-expandImage(movie) {
-    return {
-        type: EXPAND_IMAGE,
-        movie: movie
-    }
-},
+    expandImage(movie) {
+        return {
+            type: EXPAND_IMAGE,
+            movie: movie
+        }
+    },
 
-collapseImage(movie) {
-    return {
-        type: COLLAPSE_IMAGE,
-        movie: movie
+    collapseImage(movie) {
+        return {
+            type: COLLAPSE_IMAGE,
+            movie: movie
+        }
     }
-}
 };

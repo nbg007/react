@@ -1,4 +1,3 @@
-
 import { Map, List, Record } from 'Immutable';
 import strings from '../localization';
 import {
@@ -32,7 +31,7 @@ const navigation = (state = initialState, action = "") => {
 
         case EXPAND_IMAGE:
             let movie = action.movie;
-            return state.merge({ activeMovieId: movie.id });
+            return state.merge({activeMovieId: movie.id});
 
         case COLLAPSE_STACK:
             return state.merge({activeGroupId: null, activeMovieId: null});

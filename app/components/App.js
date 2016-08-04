@@ -5,10 +5,10 @@ import VisibleTabBody from '../containers/VisibleTabBody'
 const App = () => {
     return (
         <div>
-        <SelectableTabs />
-        <VisibleTabBody />
+            <SelectableTabs />
+            <VisibleTabBody />
         </div>
-);
+    );
 };
 
 export default App

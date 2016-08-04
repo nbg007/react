@@ -1,4 +1,3 @@
-
 import { Map, List, Record } from 'Immutable';
 import {
     SORT_STACKS_ASC,
