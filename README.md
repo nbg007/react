@@ -12,12 +12,12 @@ This is built using the following stack:
 I originally started with a basic react, hapi, webpack, babel stack. But then when I started to read best practices, ran into Redux. Using Redux the components can become truly stateless: they would now just take an input and simply return an output. Redux maintains the whole state of the app, and the only way to modify the state would be with actions, which change the state using reducers.
     
 ## Demo
-   Now lets crank up the engine and check out the demo
+   Now lets crank up the engine and check out the demo.
    Enter the following command in the directory where package.json lives.
    ```
    npm start
    ```
-   After the server starts, hit this url 
+   After the server starts, hit this url (BEST VIEWED IN: CHROME on Mac)
    ```
    http://localhost:3000
    ```
