@@ -3,7 +3,7 @@ This is an application that provides a User Interface to view art work based on 
 This is built using the following stack:
 * React
 * Redux: To maintain the state  
-* Immutable: To make sure data is not mutated directly
+* Immutable: To make sure data is not mutated directly, in this case - state
 * webpack: To package all the dependencies
 * babel: To convert es6 to es5
 * Nodejs with Hapi: Server 
@@ -49,7 +49,7 @@ I originally started with a basic react, hapi, webpack, babel stack. But then wh
         * containers
             * Used to keep the components independent of the state. We connect the container to a component, and redux generates the code to connect actions and provide data to the components.
         * components
-            * Purely presentational. Has the markup that goes into the dom. (although I didn't get enough time to convert all of them to containers)
+            * Purely presentational. Has the markup that goes into the dom.
         * selectors
             * Used to memoize/cache the data we need in different structures.
         * localization
@@ -61,3 +61,6 @@ I originally started with a basic react, hapi, webpack, babel stack. But then wh
         
 * __public__
     * Files served to the client like index.html, bundled javascript and some fonts. Although I could clean up this a bit.
+    
+* __tests__
+    * Wrote the tests only for actions, reducers and selectors as components are presentational. (also due to time constraints, I was not able to get react tests working with components that are powered by redux).
