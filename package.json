@@ -59,7 +59,7 @@
   "scripts": {
     "build": "webpack --debug",
     "start": "npm install; webpack; node server/server.js",
-    "postinstall": "webpack; node server/server.js",
+    "heroku-prebuild": "webpack; node server/server.js",
     "test": "mocha --compilers js:babel-register --require ./tests/setup ./tests/**/*.js --recursive",
     "test:watch": "npm test -- --watch"
   }
